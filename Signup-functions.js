@@ -35,7 +35,7 @@ function signup_user() {
 	    }
 	    cognitoUser = result.user;
 	    console.log('user name is ' + cognitoUser.getUsername());
-	    alert("Sign up successful");
+	    alert("Sign up successful. Please check your email for verification code");
 	    window.location.href = "Login2.html";
 	    //return false; //Need this?
 	});
