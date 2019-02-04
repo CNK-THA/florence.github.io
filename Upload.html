@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.384.0.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> <!--For the $ in Upload.js-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="bs-4-2-1-js/bootstrap.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="bs-4-2-1-css/bootstrap.css">
+
+	<script src="Upload.js"></script> 
+</head>
+
+<a href="Main.html" id = "back" style="font-size: 25px;">Back</a>
+
+
+<form class="md-form">
+    <div class="photos">
+    	<img src="https://mdbootstrap.com/img/Photos/Others/placeholder.jpg" alt="example placeholder" height = "400" width = "400" id = "pic" style="margin-left: 100px;">
+
+    	<div class = "stuff" style="float: right; margin-right: 200px; margin-top: 100px;">
+	    	<p>Write a caption:</p>
+				<textarea id = "textarea" rows="4" cols="50" maxlength="100"></textarea><br>
+				<div id = "feedback"></div>
+				<button type = "button" class ="btn btn-primary" onclick="addPhoto()" id = "submit" style="margin-top: 50px; margin-left: 150px;">Submit!</button>
+		</div>
+    </div>
+
+    <div class="btn btn-primary" style="margin-left: 100px; margin-top: 50px;">
+    	<input type="file" id = "choose" onchange = "readURL(this);">
+	</div>
+</form>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+
+	<link rel="stylesheet" href="Signup-style.css">
+	<script src="https://sdk.amazonaws.com/js/aws-sdk-2.384.0.js"></script>
+	<script src ="aws-cognito-sdk.min.js"></script>
+	<script src="amazon-cognito-identity.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="bs-4-2-1-js/bootstrap.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="bs-4-2-1-css/bootstrap.css">
+
+
+	<script src = "Signup-functions.js"></script>
+</head>
+
+<div class = "return">
+	<h3>
+		<a href = 'Login2.html'>Back</a>
+	</h3>
+
+</div>
+
+
+<div class = "Title" style = "margin-left: 550px; margin-top: 50px;">
+	<h1>Sign up</h1>
+	<br>
+</div>
+
+<div class = "info" style = "margin-left: 520px";>
+	<h5>Please enter your details</h5>
+</div>
+
+
+<div class = "container">
+	<form class = "input" style = "margin-left:350px; width: 400px;">
+		Username:
+		<input class = "form-control" type="email" name="email" id = "email" placeholder="Enter Email"><br>
+		Password: 
+		<input class = "form-control" type="password" name="psd" id = "password" placeholder="Enter Password"><br>
+		Name:
+		<input class = "form-control" type="text" name="name" id = "name" placeholder="Enter your Name"><br>
+	
+	
+	</form>
+	<button style="margin-left: 500px;" class="btn btn-primary" onclick="signup_user()" id = "signup" style="margin-left: 150px;">Sign me up!</button>
+</div>
